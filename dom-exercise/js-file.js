@@ -12,7 +12,7 @@
 // Part 1 - Creating <p> tag w/ red text
 const container = document.querySelector("#container");
 const redText = document.createElement("p");
-redText.setAttribute("style", "color: red");
+redText.setAttribute("style", "color: red;");
 redText.textContent = "Hey I'm red!";
 container.appendChild(redText);
 
@@ -21,3 +21,14 @@ const blueText = document.createElement("h3");
 blueText.setAttribute("style", "color: blue");
 blueText.textContent = "I'm a blue h3!";
 container.appendChild(blueText);
+
+// Part 3 - Creating a <div> with a black border and pink background color w/ elements inside
+const content = document.createElement("div");
+content.setAttribute("style", "border: 1px solid black; background-color: pink; padding: 10px; width: 200px;");
+const h1 = document.createElement("h1");
+h1.textContent = "I'm in a div";
+const p = document.createElement("p");
+p.textContent = "ME TOO!";
+content.appendChild(h1);
+content.appendChild(p);
+container.appendChild(content);
