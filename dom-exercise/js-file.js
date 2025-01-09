@@ -8,3 +8,10 @@
         - a <p> that says “ME TOO!”
         - Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
 */
+
+// Part 1 - Creating <p> tag w/ red text
+const container = document.querySelector("#container");
+const redText = document.createElement("p");
+redText.setAttribute("style", "color: red");
+redText.textContent = "Hey I'm red!";
+container.appendChild(redText);
