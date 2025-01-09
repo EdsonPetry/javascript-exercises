@@ -15,3 +15,9 @@ const redText = document.createElement("p");
 redText.setAttribute("style", "color: red");
 redText.textContent = "Hey I'm red!";
 container.appendChild(redText);
+
+// Part 2 - Creating a <h3> with blue text that says "I'm a blue h3!"
+const blueText = document.createElement("h3");
+blueText.setAttribute("style", "color: blue");
+blueText.textContent = "I'm a blue h3!";
+container.appendChild(blueText);
